@@ -5,3 +5,4 @@ export default function IntervenantsPage() {
     <p className="text-xs text-slate-600">Du 1er au 5 Septembre 2026</p>
   );
 }
+

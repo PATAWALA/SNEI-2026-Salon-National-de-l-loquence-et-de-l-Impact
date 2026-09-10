@@ -11,14 +11,30 @@ export interface Actualite {
 }
 
 export const ACTUALITES_SNEI: Actualite[] = [
-  {
+
+    {
     id: "1",
+    slug: "retour-en-images-jour-4",
+    title: "RETOUR EN IMAGES - JOUR 4",
+    category: "Annonce",
+    date: "Septembre 2026",
+    badgeText: "En Direct du Salon",
+    image: "/jour-4.jpg", // Mets la photo de la journée 4 ici
+    excerpt: "Retour en images sur une quatrième journée riche en échanges, en talents et en émotions à la veille de la grande finale.",
+    content: `Retour en images sur une quatrième journée riche en échanges, en talents et en émotions.
+
+Une journée marquée par de beaux moments de partage et de préparation, à la veille de la grande finale des compétitions.
+
+Découvrez les temps forts de cette journée en quelques clichés et préparez-vous pour l'apothéose.`
+  },
+  {
+    id: "2",
     slug: "partenariat-mr-sapologie",
     title: "Un partenariat qui apporte son savoir-faire au SNEI !",
     category: "Partenariat",
     date: "Septembre 2026",
     badgeText: "Nouveau Partenaire",
-    image: "/snei/sapologie.jpg", // Mets la vraie photo ici dans public/snei/
+    image: "/sapologie.jpg", // Mets la vraie photo ici dans public/snei/
     excerpt: "Nous avons le plaisir de compter MR Sapologie parmi les partenaires du Salon National de l’Éloquence et de l’Impact.",
     content: `Nous avons le plaisir de compter MR Sapologie parmi les partenaires du Salon National de l’Éloquence et de l’Impact.
 
@@ -29,13 +45,13 @@ Une belle collaboration qui vient renforcer la dynamique du SNEI et l’ambition
 Bienvenue dans l’aventure SNEI 2, MR Sapologie !`
   },
   {
-    id: "2",
+    id: "3",
     slug: "sponsor-ready-study-go",
     title: "READY STUDY GO! : Un sponsor qui croit en la jeunesse",
     category: "Sponsor",
     date: "Septembre 2026",
     badgeText: "Sponsor Officiel",
-    image: "/snei/ready-study-go.jpg", // Mets la vraie photo ici dans public/snei/
+    image: "/ready-study-go.jpg", // Mets la vraie photo ici dans public/snei/
     excerpt: "Le Salon National de l’Éloquence et de l’Impact est heureux de compter Ready Study Go! parmi ses sponsors.",
     content: `Le Salon National de l’Éloquence et de l’Impact est heureux de compter Ready Study Go! parmi ses sponsors.
 

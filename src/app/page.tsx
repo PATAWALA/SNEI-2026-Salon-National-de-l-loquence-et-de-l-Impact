@@ -66,6 +66,35 @@ export default function HomePage() {
         </div>
       </section>
 
+            {/* 5. DERNIÈRES ACTUALITÉS */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+            <div>
+              <h2 className="text-3xl font-extrabold text-slate-900 mb-2">
+                Dernières Actualités & Annonces
+              </h2>
+              <p className="text-slate-600 text-sm">
+                Restez informés des nouveautés et partenariats du SNEI 2026.
+              </p>
+            </div>
+            <Link
+              href="/actualites"
+              className="inline-flex items-center gap-2 text-sm font-bold text-emerald-800 hover:text-emerald-900"
+            >
+              <span>Voir tous les articles</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {ACTUALITES_SNEI.map((item) => (
+              <ActualiteCard key={item.id} item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 2. BANDEAU SPONSORS ET PARTENAIRES */}
       <section className="bg-slate-900 border-y border-slate-800 py-10 px-4">
         <div className="max-w-7xl mx-auto">
@@ -163,35 +192,6 @@ export default function HomePage() {
                 </span>
                 <h4 className="font-bold text-sm text-slate-100 pt-2">{item.title}</h4>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. DERNIÈRES ACTUALITÉS */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
-            <div>
-              <h2 className="text-3xl font-extrabold text-slate-900 mb-2">
-                Dernières Actualités & Annonces
-              </h2>
-              <p className="text-slate-600 text-sm">
-                Restez informés des nouveautés et partenariats du SNEI 2026.
-              </p>
-            </div>
-            <Link
-              href="/actualites"
-              className="inline-flex items-center gap-2 text-sm font-bold text-emerald-800 hover:text-emerald-900"
-            >
-              <span>Voir tous les articles</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {ACTUALITES_SNEI.map((item) => (
-              <ActualiteCard key={item.id} item={item} />
             ))}
           </div>
         </div>
